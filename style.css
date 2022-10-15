@@ -1,4 +1,96 @@
-* {
-    cursor: url('prevcursor.png') 0 59, w-resize;
+* {box-sizing:border-box}
+
+body {
+    background-color: black;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
 }
+body::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.myMobileSlides {
+    display: none;
+}
+
+.phonemaxwidth {
+    max-width: 500px;
+}
+
+.active {
+    display: block;
+}
+
+.down-container {
+    position: absolute;
+    max-width: 1000px;
+    margin: auto;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+  }
+
+.toOpen {
+    display: none;
+    position: relative;
+}
+
+.toOpen::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+}
+
+.open {
+    display: block;
+}
+
+#buttoncontainer{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+}
+
+/* Next & previous buttons */
+.prev, .next, .down {
+  width: auto;
+  opacity: 100;
+  float: left;
+  width: 50%;
+}
+
+.prev{
+    cursor: url('prevcursor.png') 59 59, w-resize;
+}
+
+.next{
+    cursor: url('nextcursor.png') 59 59, e-resize;
+}
+
+.down{
+    display: none;
+    cursor: url('downcursor.png') 59 59, s-resize;
+}
+
+.activated{
+    cursor: url('topcursor.png') 59 59, n-resize;
+}
+
+.down.visible{
+    display: block;
+}
+
 
