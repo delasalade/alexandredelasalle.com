@@ -11,7 +11,7 @@ body::-webkit-scrollbar {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1150px;
+  max-width: 1000px;
   position: relative;
   margin: auto;
 }
@@ -35,7 +35,7 @@ body::-webkit-scrollbar {
 
 .down-container {
     position: absolute;
-    max-width: 1150px;
+    max-width: 1000px;
     margin: auto;
     top: 0%;
     left: 0%;
